@@ -1,0 +1,366 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p {
+    font-size: 20px;
+    line-height: 1.8;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+nav.menu {
+    width: 100%;
+    height: 130px;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 120px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    width: 130px;
+    height: auto;
+    display: block;
+    margin-left: 100px;
+}
+
+
+.topo {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-right: 150px;
+}
+
+.topo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    transition: 0.3s;
+    padding-left: 35px;
+}
+
+.topo a:hover {
+    color: #ff0000;
+}
+.historia{
+    margin-top: 180px; 
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px;
+    margin-bottom: 55px;
+}
+.historia h1{
+    font-size: 42px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    margin-bottom: 30px;
+    border-left: 6px solid #e20000;
+    padding-left: 15px;
+}
+.historia p{
+    font-size: 20px;
+    line-height: 1.8;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+.historia{
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.15);
+}
+.obras{
+    width:100%;
+    padding:90px 8%;
+    background:#f5f5f5;
+}
+
+.obras h1{
+    text-align:center;
+    font-size:45px;
+    color:#222;
+    margin-bottom:15px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.obras p{
+    font-size: 20px;
+    line-height: 1.8;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.carrossel{
+
+    display:flex;
+    gap:30px;
+
+    overflow-x:auto;
+
+    scroll-behavior:smooth;
+
+    padding-bottom:20px;
+
+}
+
+.carrossel::-webkit-scrollbar{
+
+    height:10px;
+
+}
+
+.carrossel::-webkit-scrollbar-thumb{
+
+    background:#d4af37;
+    border-radius:20px;
+
+}
+
+.card{
+
+    min-width:380px;
+    height:260;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.18);
+    transition:.4s;
+    cursor:pointer;
+    background:white;
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.card img{
+
+    width:100%;
+    height:100%;
+    object-fit:cover;
+
+    transition:.5s;
+
+}
+
+.card:hover img{
+
+    transform:scale(1.12);
+
+}
+.card .descricao{
+    padding:25px;
+}
+
+.card h3{
+    font-size:28px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#222;
+    margin-bottom:20px;
+    border-left:6px solid #d4af37;
+    padding-left:15px;
+}
+
+.card p{
+    font-size:18px;
+    line-height:1.8;
+    color:#555;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align:justify;
+    margin:0;
+}
+@media (max-width:1200px){
+
+    nav.menu{
+        padding:0 40px;
+    }
+
+    .logo img{
+        margin-left:0;
+    }
+
+    .topo{
+        margin-right:0;
+        gap:25px;
+    }
+
+    .historia{
+        max-width:95%;
+        padding:40px;
+    }
+
+    .obras{
+        padding:80px 5%;
+    }
+
+    .card{
+        min-width:340px;
+    }
+
+}
+
+@media (max-width:992px){
+
+    nav.menu{
+        height:100px;
+        padding:0 25px;
+    }
+
+    .logo img{
+        width:100px;
+    }
+
+    .topo{
+        gap:18px;
+    }
+
+    .topo a{
+        font-size:17px;
+        padding-left:0;
+    }
+
+    .historia{
+        margin-top:140px;
+        padding:35px;
+    }
+
+    .historia h1,
+    .obras h1{
+        font-size:36px;
+    }
+
+    .historia p,
+    .obras p{
+        font-size:18px;
+    }
+
+    .card{
+        min-width:320px;
+    }
+
+}
+
+@media (max-width:768px){
+
+    nav.menu{
+        height:auto;
+        flex-direction:column;
+        justify-content:center;
+        padding:20px;
+    }
+
+    .logo img{
+        width:80px;
+        margin:0;
+    }
+
+    .topo{
+        width:100%;
+        margin:15px 0 0;
+        justify-content:center;
+        flex-wrap:wrap;
+        gap:15px;
+    }
+
+    .topo a{
+        font-size:16px;
+    }
+
+    .historia{
+        margin-top:170px;
+        width:95%;
+        padding:25px;
+    }
+
+    .historia h1,
+    .obras h1{
+        font-size:30px;
+    }
+
+    .historia p,
+    .obras p{
+        font-size:17px;
+    }
+
+    .obras{
+        padding:70px 20px;
+    }
+
+    .card{
+        min-width:280px;
+    }
+
+    .card h3{
+        font-size:22px;
+    }
+
+    .card p{
+        font-size:16px;
+    }
+
+}
+
+@media (max-width:480px){
+
+    .logo img{
+        width:70px;
+    }
+
+    .topo{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    .topo a{
+        font-size:15px;
+    }
+
+    .historia{
+        margin-top:220px;
+        padding:20px;
+    }
+
+    .historia h1,
+    .obras h1{
+        font-size:26px;
+    }
+
+    .historia p,
+    .obras p{
+        font-size:16px;
+        line-height:1.6;
+    }
+
+    .obras{
+        padding:60px 15px;
+    }
+
+    .card{
+        min-width:250px;
+    }
+
+    .card h3{
+        font-size:20px;
+    }
+
+    .card p{
+        font-size:15px;
+    }
+
+}
