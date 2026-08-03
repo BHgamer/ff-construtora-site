@@ -6,6 +6,7 @@
     <title>FF Construtora</title>
     <link rel="icon" href="./assets/Logo.png">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
 </head>
 <body>
     <nav class="menu">
@@ -15,7 +16,7 @@
         <div class="topo">
             <a href="#contatos">Contatos</a>
             <a href="#sobre">Sobre</a>
-            <a href="#localização">Localização</a>
+            <a href="#localizacao">Localização</a>
             <a href="#NossosServiços">Nossos Serviços</a>
         </div>
     </nav>
@@ -92,6 +93,40 @@
 
 </div>
 
-</body>
+<div class="localizacao" id="localizacao">
+    <h1>Nossa Localização</h1>
 
+    <iframe
+        src="https://maps.google.com/maps?q=-15.912167,-47.748000&z=16&output=embed"
+        loading="lazy"
+        allowfullscreen>
+    </iframe>
+</div>
+
+<footer class="footer">
+    <a
+        href="https://wa.me/5561995768032?text=Olá!%20Visitei%20o%20site%20da%20FF%20Construtora%20e%20gostaria%20de%20solicitar%20um%20orçamento."
+        class="whatsapp-float"
+        target="_blank"
+        aria-label="Fale conosco pelo WhatsApp">
+
+        <img src="./assets/whatsapp-svgrepo-com.png" alt="WhatsApp">
+    </a>
+
+    <div class="footer-container">
+        <p class="salmos">
+            "Se o Senhor não edificar a casa, em vão trabalham os que a edificam."
+            <strong>— Salmos 127:1</strong>
+        </p>
+
+        <p class="copyright">
+            © 2016 - <span id="anoAtual"></span> FF Construtora. Todos os direitos reservados.
+        </p>
+    </div>
+    <script>
+    document.getElementById("anoAtual").textContent = new Date().getFullYear();
+</script>
+
+</footer>
+</body>
 </html>
