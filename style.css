@@ -53,9 +53,10 @@ nav.menu {
 .topo a:hover {
     color: #ff0000;
 }
-.historia{
-    margin-top: 180px; 
-    max-width: 1200px;
+.historia {
+    margin-top: 180px;
+    width: 95%;
+    max-width: none;
     margin-left: auto;
     margin-right: auto;
     padding: 50px;
